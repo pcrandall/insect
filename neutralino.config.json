@@ -12,10 +12,12 @@
   "modes": {
     "window": {
       "title": "insect - scientific calculator",
-      "width": 1000,
+      "width": 800,
+      "height": 400,
       "fullScreen": false,
       "alwaysOnTop": false,
       "icon": "/resources/icons/appIcon.png",
+      "iconfile": "/resources/icons/appIcon.png",
       "enableInspector": false,
       "borderless": false,
       "maximize": false

@@ -1,10 +1,20 @@
-# neutralinojs-minimal
-The simplest template for a Neutralinojs app. It's possible to use your favorite frontend framework using the following steps.
+# Native client for insect
 
-- Create a new project using your favorite frontend framework. (Eg: `ng new --directory .`)
-- Make the frontend framework's build path and Neutralino config's `url`, `resourcesPath` the same.
-- Build with the correct base href.
+See [Insect](https://github.com/sharkdp/insect) for more details.
 
-# Icon credits
+Bundled with [Neutralinojs](https://github.com/neutralinojs/neutralinojs)
 
-- `trayIcon.png` - Made by [Freepik](https://www.freepik.com) and downloaded from [Flaticon](https://www.flaticon.com)
+## Installation
+
+Install Darwin
+
+    curl -s https://api.github.com/repos/pcrandall/insect/releases/latest | grep "browser_download_url" | cut -d '"' -f 4 | grep darwin | wget -qi - --output-document=insect.tar.gz && tar -xf insect.tar.gz && rm insect.tar.gz
+
+Install Windows
+
+    curl -s https://api.github.com/repos/pcrandall/insect/releases/latest | grep "browser_download_url" | cut -d '"' -f 4 | grep windows | wget -qi - --output-document=insect.zip && unzip -o insect.zip && rm insect.zip
+
+Install Linux
+
+    curl -s https://api.github.com/repos/pcrandall/insect/releases/latest | grep "browser_download_url" | cut -d '"' -f 4 | grep linux | wget -qi - --output-document=insect.tar.gz && tar -xf insect.tar.gz && rm insect.tar.gz
+

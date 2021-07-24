@@ -4,6 +4,7 @@
 # Neutralinojs binaries and builds
 # /bin
 # /dist
+/webview
 
 # Neutralinojs client (minified)
 # neutralino.js
