@@ -4,17 +4,12 @@ See [Insect](https://github.com/sharkdp/insect) for more details.
 
 Bundled with [Neutralinojs](https://github.com/neutralinojs/neutralinojs)
 
+![Demo Screenshot](img/README.png)
+
 ## Installation
 
-Install Darwin
+Download prebuilt binaries from the [Releases](https://github.com/pcrandall/insect/releases) page.
 
-    curl -s https://api.github.com/repos/pcrandall/insect/releases/latest | grep "browser_download_url" | cut -d '"' -f 4 | grep darwin | wget -qi - --output-document=insect.tar.gz && tar -xf insect.tar.gz && rm insect.tar.gz
+If you are using windows you can run the installWindows.bat script to install, otherwise extract archive to your `%PATH` location.
 
-Install Windows
-
-    curl -s https://api.github.com/repos/pcrandall/insect/releases/latest | grep "browser_download_url" | cut -d '"' -f 4 | grep windows | wget -qi - --output-document=insect.zip && unzip -o insect.zip && rm insect.zip
-
-Install Linux
-
-    curl -s https://api.github.com/repos/pcrandall/insect/releases/latest | grep "browser_download_url" | cut -d '"' -f 4 | grep linux | wget -qi - --output-document=insect.tar.gz && tar -xf insect.tar.gz && rm insect.tar.gz
-
+**WebViewLoader.dll and res.neu must be located in the same directory as the insect executable**
