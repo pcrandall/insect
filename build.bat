@@ -1,3 +1,0 @@
-neu build
-
-pause
