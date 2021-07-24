@@ -15,25 +15,25 @@ set -o verbose
 buildDir=dist/insect
 dist=dist/$version
 mkdir -p $dist
-
 cp ./README.md $buildDir/README.md;
 
 # MacOs
 cp $buildDir/insect-mac $buildDir/insect; \
-tar czf $dist/insect-$version-darwin.tar.gz --strip-components=1 -C $buildDir/{insect,res.neu,WebView2Loader.dll,README.md}; \
+tar czf $dist/insect-$version-darwin.tar.gz $buildDir/{insect,res.neu,WebView2Loader.dll,README.md}; \
 file=$dist/insect-$version-darwin.tar.gz; \
 md5sum $file > $file.md5;
 
 # Linux
 cp $buildDir/insect-linux $buildDir/insect; \
-tar czf $dist/insect-$version-linux.tar.gz --strip-components=1 -C $buildDir/{insect,res.neu,WebView2Loader.dll,README.md}; \
+tar czf $dist/insect-$version-linux.tar.gz $buildDir/{insect,res.neu,WebView2Loader.dll,README.md}; \
 file=$dist/insect-$version-linux.tar.gz; \
 md5sum $file > $file.md5;
 
 # Windows
-
 cp $buildDir/insect-win.exe $buildDir/insect.exe; \
-zip $dist/insect-$version-windows.zip $buildDir/{insect.exe,res.neu,WebView2Loader.dll,README.md}; \
+cp ./scripts/windowsInstall.bat $buildDir ; \
+cp ./resources/icons/favicon.ico $buildDir; \
+zip $dist/insect-$version-windows.zip $buildDir/{insect.exe,res.neu,WebView2Loader.dll,README.md,windowsInstall.bat,favicon.ico}; \
 file=$dist/insect-$version-windows.zip; \
 md5sum $file > $file.md5;
 
