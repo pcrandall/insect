@@ -10,14 +10,6 @@
     <meta property="og:title" content="insect - scientific calculator">
     <meta property="og:url" content="https://insect.sh/">
     <meta property="og:description" content="High precision scientific calculator with full support for physical units.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@sharkdp86">
-    <meta name="twitter:title" content="insect - scientific calculator">
-    <meta name="twitter:description" content="High precision scientific calculator with full support for physical units.">
-    <meta name="twitter:image:src" content="https://insect.sh/media/insect-banner.png">
-    <meta name="twitter:image:width" content="500">
-    <meta name="twitter:image:height" content="250">
-    <meta name="twitter:url" content="https://insect.sh/">
     <title>insect - scientific calculator</title>
     <link href="https://fonts.googleapis.com/css?family=Exo+2%7CFira+Mono:400,700" rel="stylesheet">
     <link href="terminal.css" rel="stylesheet">
@@ -93,17 +85,16 @@
       var visitedBefore = localStorage.getItem("visitedBefore") === "yes";
       var greeting = "";
       if (!visitedBefore) {
-        greeting = colored("75715E", "Welcome to insect. Type '?' if this is your first visit.");
+        greeting = colored("BF616A", "Welcome to insect. Type '?' if this is your first visit.");
         localStorage.setItem("visitedBefore", "yes");
       } else {
-        greeting = colored("75715E", "Welcome to insect. Enter '?' for help.");
+        greeting = colored("BF616A", "Welcome to insect. Enter '?' for help.");
       }
 
       $(document).ready(function() {
-        var term = $('#terminal').terminal(interpret, {
+        var term = $('body').terminal(interpret, {
           greetings: greeting,
           name: "terminal",
-          height: 400,
           prompt: "[[;;;prompt]&gt; ]",
           // clear: false, // do not include 'clear' command
           // exit: false, // do not include 'exit' command

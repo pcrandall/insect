@@ -10,14 +10,6 @@ body {
     margin-bottom: 3px;
 }
 
-#content {
-    padding-left: 3px;
-    padding-right: 3px;
-    width: 98%;
-    height: 98%;
-    margin: 0 auto;
-}
-
 h1 {
     font-weight: 400;
     font-size: 3em;
@@ -31,15 +23,14 @@ p.desc {
     margin-bottom: 1.8em;
 }
 
-
 /* jQuery Terminal */
-
 .terminal {
-    --color: #F8F8F2;
-    --background: #272822;
-    --size: 1.6;
-    --link-color: #F8F8F2;
+    --color: #ECEFF4;
+    --background: #3B4252;
+    --size: 1.4;
+    --link-color: #8FBCBB;
     font-family: 'Fira Mono', monospace;
+    --animation: terminal-bar;
 }
 
 .terminal, .terminal .terminal-fill {
@@ -81,11 +72,13 @@ p.desc {
 }
 
 .hl-value {
-    color: #66D9EF !important;
+    /* color: #66D9EF !important; */
+    color: #8FBCBB !important;
 }
 
 .hl-identifier {
-    color: #FD971F !important;
+    /* color: #FD971F !important; */
+    color: #BF616A !important;
 }
 
 .hl-function {
@@ -93,22 +86,6 @@ p.desc {
 }
 
 .hl-unit {
-    color: #A6E22E !important;
-}
-
-/* Github Badge */
-
-.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
-
-@media (prefers-color-scheme: dark) {
-    html {
-        background: #1A1A1A;
-        color: #ECF0F1;
-    }
-
-
-
-    #insect-logo > path {
-        display: none;
-    }
+    /* color: #A6E22E !important; */
+    color: #EBCB8B !important;
 }
