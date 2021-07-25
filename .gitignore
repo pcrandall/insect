@@ -1,6 +1,7 @@
 /dist
 /webview
 /node_modules
-
+/src-tauri/target
+/src-tauri/Wixtools
 .storage
 *.log

@@ -22,6 +22,12 @@ ifndef NEU
 endif
 .PHONY: install
 
+# Put icon for your app at the root of the project and name it app-icon.png
+icon:
+	@echo "==> generating icons"
+	@yarn tauri icon
+.PHONY: icon
+
 update:
 	@echo "$(NEU)"
 	@echo "==> getting latest insect.js from https://insect.sh/insect.js"

@@ -23,10 +23,10 @@
             },
             "externalBin": [],
             "icon": [
-                "icons/trayIcon.png"
+                "icons/icon.ico"
             ],
-            "identifier": "com.insect.dev",
-            "longDescription": "",
+            "identifier": "com.pcrandall.insect",
+            "longDescription": "native client for insect.sh",
             "macOS": {
                 "entitlements": null,
                 "exceptionDomain": "",
