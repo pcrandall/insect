@@ -1,0 +1,69 @@
+{
+    "build": {
+        "beforeBuildCommand": "",
+        "beforeDevCommand": "",
+        "devPath": "../app",
+        "distDir": "../app"
+    },
+    "package": {
+        "productName": "insect",
+        "version": "0.1.0"
+    },
+    "tauri": {
+        "allowlist": {
+            "all": true
+        },
+        "bundle": {
+            "active": true,
+            "category": "DeveloperTool",
+            "copyright": "",
+            "deb": {
+                "depends": [],
+                "useBootstrapper": false
+            },
+            "externalBin": [],
+            "icon": [
+                "icons/trayIcon.png"
+            ],
+            "identifier": "com.insect.dev",
+            "longDescription": "",
+            "macOS": {
+                "entitlements": null,
+                "exceptionDomain": "",
+                "frameworks": [],
+                "minimumSystemVersion": "",
+                "signingIdentity": null,
+                "useBootstrapper": false
+            },
+            "resources": [],
+            "shortDescription": "",
+            "targets": [
+                "deb",
+                "appimage",
+                "app",
+                "dmg",
+                "msi"
+            ],
+            "windows": {
+                "certificateThumbprint": null,
+                "digestAlgorithm": "sha256",
+                "timestampUrl": ""
+            }
+        },
+        "security": {
+            "csp": "default-src blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self' img-src: 'self'"
+        },
+        "updater": {
+            "active": false
+        },
+        "windows": [
+            {
+                "fullscreen": false,
+                "height": 400,
+                "resizable": true,
+                "title": "insect - scientific calculator",
+                "width": 800
+            }
+        ]
+    }
+}
