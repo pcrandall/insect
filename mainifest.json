@@ -1,0 +1,52 @@
+{
+    "background_color": "#3B4245",
+    "display": "standalone",
+    "icons": [
+        {
+            "density": "0.75",
+            "sizes": "30x30",
+            "src": "icons/Square30x30Logo.png",
+            "type": "image/png"
+        },
+        {
+            "density": "1.0",
+            "sizes": "44x44",
+            "src": "icons/Square44x44Logo.png",
+            "type": "image/png"
+        },
+        {
+            "density": "1.5",
+            "sizes": "71x71",
+            "src": "icons/Square71x71Logo.png",
+            "type": "image/png"
+        },
+        {
+            "density": "2.0",
+            "sizes": "89x89",
+            "src": "icons/Square89x89Logo.png",
+            "type": "image/png"
+        },
+        {
+            "density": "3.0",
+            "sizes": "142x142",
+            "src": "icons/Square142x142Logo.png",
+            "type": "image/png"
+        },
+        {
+            "density": "4.0",
+            "sizes": "284x284",
+            "src": "icons/Square284x284Logo.png",
+            "type": "image/png"
+        },
+        {
+            "density": "4.0",
+            "sizes": "512x512",
+            "src": "ASSET_BASE_PLACEHOLDER/logo-512x512.png",
+            "type": "image/png"
+        }
+    ],
+    "name": "insect",
+    "short_name": "insect",
+    "start_url": "/",
+    "theme_color": "#ffffff"
+}
