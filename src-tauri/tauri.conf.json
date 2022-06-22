@@ -19,7 +19,6 @@
             "copyright": "",
             "deb": {
                 "depends": [],
-                "useBootstrapper": false
             },
             "externalBin": [],
             "icon": [
@@ -31,9 +30,8 @@
                 "entitlements": null,
                 "exceptionDomain": "",
                 "frameworks": [],
-                "minimumSystemVersion": "",
+                "minimumSystemVersion": "10.11",
                 "signingIdentity": null,
-                "useBootstrapper": false
             },
             "resources": [],
             "shortDescription": "",
