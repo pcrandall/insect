@@ -1,27 +1,5 @@
 currentDir = $(shell pwd)
 
-ifeq '$(findstring ;,$(PATH))' ';'
-    detected_OS := Windows
-else
-    detected_OS := $(shell uname 2>/dev/null || echo Unknown)
-endif
-
-ifeq ($(detected_OS),Windows)
-	cmd := ${currentDir}/scripts/cp_neutralino.bat
-	NEU := $(where neu)
-else
-	cmd := ${currentDir}/scripts/cp_neutralino.sh
-	NEU := $(shell command -v neu 2> /dev/null)
-endif
-
-install:
-ifndef NEU
-	@echo "$(NEU)"
-	@echo "==> installing neutralino js"
-	@npm install -g @neutralinojs/neu
-endif
-.PHONY: install
-
 # Put icon for your app at the root of the project and name it app-icon.png
 icon:
 	@echo "==> generating icons"
